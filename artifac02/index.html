@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <h1 id="title">Chessbord</h1>
+ 
+  <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/just-letters" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .chessboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        .white {
+            width: 12.5%;
+            height: 50px;
+            background-color: #ffffff;
+            border: 1px solid black;
+        }
+
+        .black {
+            width: 12.5%;
+            height: 50px;
+            background-color: #000000;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+    <div class="chessboard">
+       
+        <div class="row"> <!-- Row 1 -->
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/48/chess-3413415_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1484725245/photo/white-chess-horse-on-black-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=GA4y_fw7Z1a4VKS2vz3wIDnLrmotanS-Zlmhl2su0L4=" width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413422_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1222606303/photo/chess-game-white-king-figure-and-fallen-black-pawns-on-a-dark-background-low-key-lighting-3d.webp?a=1&b=1&s=612x612&w=0&k=20&c=8lPW9BVT93_dCwvKtx6LZ3zz9igDx30oRS2qPQs4P-8="width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/04/10/15/41/chess-piece-3307791_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/90665069/photo/bishop-chess-piece.webp?a=1&b=1&s=612x612&w=0&k=20&c=stbItGGRbNZeD2bvt8iMAMZwgls6chu-XDezETymtVs="width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2012/04/13/17/39/knight-33015_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1979014235/photo/isolated-image-of-white-rook-chess-piece-on-black-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=Kf7VWx519cXcv7guH6lM9qg4G2QYtiRYQ1ahQh5UmOQ="width="50" height="50"></div>
+        </div>
+        <div class="row"> <!-- Row 2 -->
+            <div class="black"><img src="https://media.istockphoto.com/id/1979014232/photo/isolated-image-of-white-pawn-chess-piece-on-black-background.jpg?s=1024x1024&w=is&k=20&c=piOK1d6u-Z794sjmgi0IuZxc_NdCYplkIbwOeacv66c=" width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_1280.png" width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1979014232/photo/isolated-image-of-white-pawn-chess-piece-on-black-background.jpg?s=1024x1024&w=is&k=20&c=piOK1d6u-Z794sjmgi0IuZxc_NdCYplkIbwOeacv66c=" width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_1280.png" width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1979014232/photo/isolated-image-of-white-pawn-chess-piece-on-black-background.jpg?s=1024x1024&w=is&k=20&c=piOK1d6u-Z794sjmgi0IuZxc_NdCYplkIbwOeacv66c=" width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_1280.png" width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1979014232/photo/isolated-image-of-white-pawn-chess-piece-on-black-background.jpg?s=1024x1024&w=is&k=20&c=piOK1d6u-Z794sjmgi0IuZxc_NdCYplkIbwOeacv66c=" width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/49/chess-3413417_1280.png" width="50" height="50"></div>
+        </div>
+        <div class="row"> <!-- Row 3 -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row"> <!-- Row 4 -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="row"> <!-- Row 5 -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row"> <!-- Row 6 -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"><img  width="50" height="50"></div>
+        </div>
+        <div class="row"> <!-- Row 7 -->
+            <div class="white"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxTgUnZN5Y2O-IQ_nko7ab6qyJ8xLn5OIug&s" width="50" height="50"></div>
+            <div class="black"><img src="https://media.istockphoto.com/id/1200115212/photo/chess-concept.jpg?s=1024x1024&w=is&k=20&c=eAP_X1j0kUab34DqoD9MdahXXHvrspbAx-IKaMG3q4s=" width="50" height="50"></div>
+            <div class="white"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxTgUnZN5Y2O-IQ_nko7ab6qyJ8xLn5OIug&s" width="50" height="50"></div>
+             <div class="black"><img src="https://media.istockphoto.com/id/1200115212/photo/chess-concept.jpg?s=1024x1024&w=is&k=20&c=eAP_X1j0kUab34DqoD9MdahXXHvrspbAx-IKaMG3q4s=" width="50" height="50"></div>
+            <div class="white"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxTgUnZN5Y2O-IQ_nko7ab6qyJ8xLn5OIug&s" width="50" height="50"></div>
+             <div class="black"><img src="https://media.istockphoto.com/id/1200115212/photo/chess-concept.jpg?s=1024x1024&w=is&k=20&c=eAP_X1j0kUab34DqoD9MdahXXHvrspbAx-IKaMG3q4s=" width="50" height="50"></div>
+            <div class="white"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxTgUnZN5Y2O-IQ_nko7ab6qyJ8xLn5OIug&s" width="50" height="50"></div>
+             <div class="black"><img src="https://media.istockphoto.com/id/1200115212/photo/chess-concept.jpg?s=1024x1024&w=is&k=20&c=eAP_X1j0kUab34DqoD9MdahXXHvrspbAx-IKaMG3q4s=" width="50" height="50"></div>
+        </div>
+        <div class="row"> <!-- Row 8-->
+            <div class="black"><img src="https://cdn.pixabay.com/photo/2013/07/12/16/57/chess-151550_1280.png"width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2016/11/05/20/15/knight-1801308_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://cdn.pixabay.com/photo/2013/07/12/13/27/bishop-147064_1280.png"width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2018/05/19/12/50/chess-3413427_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://cdn.pixabay.com/photo/2013/07/13/12/21/chess-159693_1280.png"width="50" height="50"></div>
+            <div class="white"><img src="https://cdn.pixabay.com/photo/2013/07/12/13/27/bishop-147064_1280.png"width="50" height="50"></div>
+            <div class="black"><img src="https://cdn.pixabay.com/photo/2016/11/05/20/15/knight-1801308_1280.png"width="50" height="50"></div>
+         
+          <div class="white"><img src="https://media.istockphoto.com/id/1667395237/photo/chess-tower-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=I_xYjq854MC_-ifEufMBGknTMQk8wixzViOl7saVZfY=" width="50" height="50"></div>
+        </div>
+    </div>
+
+    <footer>
+        
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0" height="31" width="88" />
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+            </a>
+        </p>
+    </footer>
+  <div id="container"> 
+ <div class="row"> <!-- Row 1 -->
+ <div class="white"></div> 
+ ....
+ </div> <!-- End Row 1-->
+ <div id="clear"> </div>
+</div><!-- End of container-->
+</body>
+</html>
