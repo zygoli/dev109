@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#pattern {
+    white-space: pre;
+    font-family: monospace;
+    line-height: 1.2;
+}
