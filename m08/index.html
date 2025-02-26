@@ -28,43 +28,25 @@
     </style>
 </head>
 <body>
-    <table id="myTable">
+    <table>
         <tr>
-            <th>Header</th>
+            <th>grocery list</th>
         </tr>
         <tr class="pink">
-            <td>Row 2</td>
+            <td>broccolii</td>
         </tr>
         <tr class="pink">
-            <td>Row 3</td>
+            <td>pizza</td>
         </tr>
         <tr class="pink">
-            <td>Row 4</td>
+            <td>juice</td>
         </tr>
         <tr class="orange">
-            <td>Row 5</td>
+            <td>apples</td>
         </tr>
         <tr class="orange">
-            <td>Row 6</td>
+            <td>chicken</td>
         </tr>
     </table>
-    <input type="text" id="newItem" placeholder="Enter new item">
-    <button onclick="addItem()">Add Item</button>
-
-    <script>
-        function addItem() {
-            var table = document.getElementById("myTable");
-            var row = table.insertRow(table.rows.length);
-            var cell = row.insertCell(0);
-            cell.innerHTML = document.getElementById("newItem").value;
-            document.getElementById("newItem").value = "";
-        }
-
-        document.getElementById("newItem").addEventListener("keypress", function(event) {
-            if (event.key === "Enter") {
-                addItem();
-            }
-        });
-    </script>
 </body>
 </html>
