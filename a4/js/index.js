@@ -103,4 +103,34 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
     }
 });
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const errors = validateForm(formData);
+
+  if (errors.length === 0) {
+    form.submit();
+    window.location.href = 'thankyou.html';
+  } else {
+    displayErrors(errors);
+  }
+});
+
+function validateForm(formData) {
+  const errors = [];
+  return errors;
+}
+
+function displayErrors(errors) {
+  const errorElement = document.getElementById('error-message');
+  errorElement.innerHTML = '';
+  errors.forEach((error) => {
+    const errorText = document.createElement('p');
+    errorText.textContent = error;
+    errorText.style.color = 'red';
+    errorElement.appendChild(errorText);
+  });
+}
 
