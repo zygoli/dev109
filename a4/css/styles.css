@@ -1,1 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#errorMessages {
+    color: red;
+}
 
