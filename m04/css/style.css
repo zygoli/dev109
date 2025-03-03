@@ -1,5 +1,8 @@
-
+body {
+  background-image: url("https://images.unsplash.com/photo-1569414753782-7b8cef3ad2e8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJhY2tyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+}
 div {
+  text-align: center;
   height: 200px;
   background-color: blue;
 }
@@ -18,6 +21,7 @@ div {
 }
 
 .top {
+  text-align: center;
   padding: 10px;
   border: 5px solid black;
   margin: 50px;
@@ -26,6 +30,7 @@ div {
 }
 
 .first {
+  text-align: center;
   padding: 10px;
   border: 5px solid black;
   margin: 5px;
@@ -35,6 +40,7 @@ div {
 }
 
 .second {
+  text-align: center;
   padding: 10px;
   border: 5px solid black;
   margin: 5px;
@@ -46,6 +52,7 @@ div {
 }
 
 .third {
+  text-align: center;
   padding: 10px;
   border: 5px solid black;
   margin: 5px;
@@ -57,9 +64,14 @@ div {
 }
 
 .blue {
+  text-align: center;
   padding: 10px;
   border: 5px solid black;
   margin: 50px;
   height: 50px;
   background-color: blue;
+}
+
+.logo{
+  text-align: center;
 }
