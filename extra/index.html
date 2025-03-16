@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="heading">I Spy Game</h1>
+    <p id="instructions">Click on the objects to find them!</p>
+    <img id="image" src="image.jpg" usemap="#map">
+    <map name="map">
+        <area id="mickey" shape="rect" coords="100,100,200,200" href="#" alt="Mickey Mouse">
+        <area id="donald" shape="rect" coords="300,100,400,200" href="#" alt="Donald Duck">
+        <area id="goofy" shape="rect" coords="100,300,200,400" href="#" alt="Goofy">
+    </map>
+    <ul id="list">
+        <li id="mickey-list">Mickey Mouse</li>
+        <li id="donald-list">Donald Duck</li>
+        <li id="goofy-list">Goofy</li>
+    </ul>
+    <button id="play-again" style="display: none;">Play Again</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
