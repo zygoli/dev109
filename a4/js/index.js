@@ -132,4 +132,8 @@ errorText.textContent = error;
 errorText.style.color = 'red';
 errorElement.appendChild(errorText);
 });
-}
+}{
+document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
+        window.location.href = 'thankyou.html';
+        return true;
+    }
