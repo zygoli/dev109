@@ -1,6 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
+function validateForm() {
     var errorMessages = '';
     var validFirstname = false;
     var validLastname = false;
@@ -76,14 +74,14 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     }
 
     var country = document.getElementById("country").value;
-    if (country === null || country === "") {
-        errorMessages += "<p>Please enter a country.</p>";
+    if (country === null || country === "" || country === "Select Country") {
+        errorMessages += "<p>Please select a country.</p>";
     } else {
         validCountry = true;
     }
 
     var zipcode = document.getElementById("zipcode").value;
-    if (country.toLowerCase() === "united states" || country.toUpperCase() === "USA") {
+    if (country.toLowerCase() === "usa") {
         if (zipcode === null || zipcode === "" || zipcode.length !== 5 || !/^[0-9]+$/.test(zipcode)) {
             errorMessages += "<p>Invalid zip code. It should be 5 digits for USA.</p>";
         } else {
@@ -99,38 +97,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
     if (errorMessages !== '') {
         document.getElementById("errorMessages").innerHTML = errorMessages;
+        return false;
     } else {
         document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
+        window.location.href = 'thankyou.html';
+        return true;
     }
-});
-const form = document.getElementById('myForm');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const errors = validateForm(formData);
-
-  if (errors.length === 0) {
-    form.submit();
-    window.location.href = 'thankyou.html';
-  } else {
-    displayErrors(errors);
-  }
-});
-
-function validateForm(formData) {
-  const errors = [];
-  return errors;
 }
-
-function displayErrors(errors) {
-  const errorElement = document.getElementById('error-message');
-  errorElement.innerHTML = '';
-  errors.forEach((error) => {
-    const errorText = document.createElement('p');
-    errorText.textContent = error;
-    errorText.style.color = 'red';
-    errorElement.appendChild(errorText);
-  });
-}
-
