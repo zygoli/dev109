@@ -102,6 +102,11 @@ document.getElementById("errorMessages").innerHTML = errorMessages;
 } else {
 document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
 }
+        {
+document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
+        window.location.href = 'thankyou.html';
+        return true;
+    } 
 });
 const form = document.getElementById('myForm');
 
@@ -132,8 +137,4 @@ errorText.textContent = error;
 errorText.style.color = 'red';
 errorElement.appendChild(errorText);
 });
-}{
-document.getElementById("errorMessages").innerHTML = "Form submitted successfully.";
-        window.location.href = 'thankyou.html';
-        return true;
-    }
+}
